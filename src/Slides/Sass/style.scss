@@ -1,0 +1,49 @@
+
+@import '../constants.scss';
+
+@mixin size($factor) {
+   height: $factor*$base;
+   width: $factor*$base;
+  }
+
+div {
+    .sass {
+        margin: 8*$base 0;
+        background-color:lighten($pallet_dark, 10);
+        color:$pallet_light;
+        padding: 8*$base 4*$base 12*$base 4*$base; 
+        line-height: 2* $base;
+      
+        .grand {
+          font-size: 3*$base;
+        }
+        
+        .container{
+            display:flex;
+            flex-direction:row;
+            
+            margin: 0;
+            .item {
+                flex-grow:0;
+            }
+          }
+
+        h1 {
+            display: inline-block;
+            font-size: 6*$base;           
+            margin-left: 2*$base;
+        }
+
+        img {
+            @include size(8);
+        }
+    }
+}
+
+
+.awkwardDiv {
+  padding: $base;
+  background-color: $pallet_lavender;
+  color: $pallet_sass_pink;
+  border-radius: $base;
+}

@@ -1,12 +1,21 @@
+import 'array.defined/lib/polyfill';
+import 'array.onempty';
+
+import 'typeface-roboto'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
+import Router from './Router/index';
+import SystekLogo from './icons/systek.logo.png';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router />
+    <div className="systeklogo">
+      <img src={SystekLogo} alt="SystekLogo" />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
