@@ -71,6 +71,13 @@ Syntactically Awesome StyleSheets / Sassy CSS
 - [ ] debugging (disse klassenavnene)
 - [ ] Anguler, Vue? (npm pakke _npm angular-styled-components_ ikke det samme)
 
+
+
+### A11Y
+
+* eslint
+* eslint-plugin-styled-components-a11y
+
 ### Style Systems
 
 

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useCallback, useEffect, useState } from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import HOME from '../icons/material/home.svg';
@@ -15,12 +14,12 @@ const getSlideNr = (path: string): number =>
     .onEmpty((arr: number[]) => arr.push(0))
     .shift() as number;
 
-export const Nav = () => {
+export const Nav = (): JSX.Element => {
   const [slide, setSlide] = useState(0);
-  let history = useHistory();
-    const parsedSlideNr = getSlideNr(useLocation().pathname);
-  
-    const goto = useCallback(
+  const history = useHistory();
+  const parsedSlideNr = getSlideNr(useLocation().pathname);
+
+  const goto = useCallback(
     (increment: number): string => {
       let nextIndex = slide + increment;
       if (nextIndex < 0) {

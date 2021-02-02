@@ -4,7 +4,7 @@ import SassLogo from './sass.logo.svg';
 
 const brackets = `{}`;
 
-const Sass = () => (
+const Sass = () : JSX.Element=> (
   <div className="sass box">
     <div className="grand awkwardDiv">... and then there is</div>
     <br />

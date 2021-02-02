@@ -8,19 +8,21 @@ import materialize from './Illu/materialize.png';
 import skeleton from './Illu/skeleton.jpg';
 import { IconContainer, IconList } from './style';
 
-const ListItem = ({ src, title, style }: { src?: string; title?: string; style?: any }) => (
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+interface ListItemProps { src?: string; title?: string; style?: any }
+const ListItem = ({ title, ...props }: ListItemProps) => (
   <div key={title}>
-    {src && (
+    {props.src && (
       <>
-        <img src={src} {...(style && { style })} alt="frameworks" />
+        <img {...{ alt: 'frameworks', ...props }} />
         <h4>{title}</h4>
       </>
     )}
-    {!src && <h5>{title}</h5>}
+    {!props.src && <h5>{title}</h5>}
   </div>
 );
 
-const Frameworks = () => (
+const Frameworks = (): JSX.Element => (
   <Container className="box">
     <h1>Frameqwirks</h1>
     <FlexContainer>

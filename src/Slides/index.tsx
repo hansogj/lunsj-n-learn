@@ -1,3 +1,4 @@
+import React from 'react';
 import StiilSlide from './Stiil';
 
 import AppSlide from './App';
@@ -18,20 +19,20 @@ import StyledComponentsCodes from './StyledComponents/code';
 
 
 export const slides = [
-  <StiilSlide />,
+  <StiilSlide key="slide_0" />,
 
-  <AppSlide />,
-  <AppCode />,
+  <AppSlide key="slide_1" />,
+  <AppCode key="slide_2" />,
 
-  <SassSlide />,
-  <SassCode />,
+  <SassSlide key="slide_3" />,
+  <SassCode key="slide_4" />,
 
-  <BootstrapSlide />,
-  <BootstrapCode />,
+  <BootstrapSlide key="slide_5" />,
+  <BootstrapCode key="slide_6" />,
 
-  <FrameworksSlide />,
+  <FrameworksSlide key="slide_7" />,
 
-  <StyledComponentsSlide />,
+  <StyledComponentsSlide key="slide_8" />,
 ...StyledComponentsCodes  
   
 ];

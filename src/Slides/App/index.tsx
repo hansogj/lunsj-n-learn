@@ -3,7 +3,7 @@ import React from 'react';
 import logo from '../../icons/logo.svg';
 import './App.css';
 
-const App = () => (
+const App = (): JSX.Element => (
   <div className="App box">
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />

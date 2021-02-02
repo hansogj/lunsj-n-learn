@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import SystekLogo from '../../icons/systek.logo.png';
-import { base_X, size } from './style.utils';
+import { base_X, size, double } from './style.utils';
 import './style.tsx';
 
 export const ListStyle = styled.ul<{ inverse: boolean }>`
@@ -12,16 +12,30 @@ export const ListStyle = styled.ul<{ inverse: boolean }>`
     font-size: 1.5em;
     position: relative;
     padding-left: ${base_X(1)};
-    ${props => props.inverse ? css`text-align : right` : css`text-align : left`};
-    
-    img  {
+    ${(props) =>
+      props.inverse
+        ? css`
+            text-align: right;
+          `
+        : css`
+            text-align: left;
+          `};
+
+    img {
       ${size(2)}
-      ${(props) => (props.inverse ? css`margin-left: ${base_X(2)} ` : css`margin-right:${base_X(2)}`)};
+      ${(props) =>
+        props.inverse
+          ? css`
+              margin-left: ${double};
+            `
+          : css`
+              margin-right: ${double};
+            `};
     }
   }
 `;
 
-const ListItems = ({ items, inverse = false }: { items: string[]; inverse?: boolean }) => (
+const ListItems = ({ items, inverse = false }: { items: string[]; inverse?: boolean }): JSX.Element => (
   <ListStyle inverse={inverse}>
     {items.map((item) => (
       <li key={`listitem_${item.slice(0, 3)}`}>

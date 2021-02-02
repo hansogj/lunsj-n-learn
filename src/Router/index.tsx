@@ -5,7 +5,7 @@ import { Nav } from './Nav';
 
 import './nav.css';
 
-const AppRouter = () => (
+const AppRouter = (): JSX.Element => (
   <Router>
     <Nav />
     <Switch>

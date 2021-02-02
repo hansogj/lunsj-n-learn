@@ -5,7 +5,7 @@ const ArbitraryContent = `Donec id elit non mi porta gravida at eget metus. Fusc
 condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
 euismod. Donec sed odio dui.`;
 
-const Bootstrap = () => {
+const Bootstrap = (): JSX.Element => {
   return (
     <div className="bg-white">
       <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
