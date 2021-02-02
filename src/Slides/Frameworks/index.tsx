@@ -1,5 +1,5 @@
 import React from 'react';
-import ListItems from '../StyledComponents/ListItems';
+import ListItems from '../StyledComponents/ListItems'; 
 import { Container, FlexContainer, CenteredIllustration } from '../StyledComponents/style';
 import bootstrap from './Illu/bootstrap.svg';
 import fondations from './Illu/fondations.svg';
@@ -33,6 +33,7 @@ const Frameworks = (): JSX.Element => (
           'A11y',
           'React, Angular, Vue',
           '"Responsive design on a large scale"',
+          'Templates og eksempler - store communities'
         ]}
       />
       <ListItems

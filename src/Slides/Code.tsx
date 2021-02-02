@@ -4,7 +4,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import * as styles from 'react-syntax-highlighter/dist/esm/styles/prism';
 import styled from 'styled-components';
 import { pallet } from './constants';
-import { base_X, double } from './StyledComponents/style.utils';
+import { double } from './StyledComponents/style.utils';
 interface CodeProp {
   file: string;
   language?: string;
@@ -21,7 +21,7 @@ const FileName = styled.pre`
 
 const host = 'http://localhost:3000';
 
-const Code = ({ file, language = 'tsx' }: CodeProp): JSX.Element => {
+const Code = ({ file, language = 'jsx' }: CodeProp): JSX.Element => {
   const [src, setSrc] = useState('....');
 
   useEffect(() => {

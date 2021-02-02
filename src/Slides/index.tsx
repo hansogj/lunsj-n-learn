@@ -15,7 +15,16 @@ import FrameworksSlide from './Frameworks';
 import StyledComponentsSlide from './StyledComponents';
 import StyledComponentsCodes from './StyledComponents/code';
 
+import Responsiveness from './Responsiveness';
+import ResponsivenessCode from './Responsiveness/code';
 
+import StyledMediaQuery from './MediaQueries';
+import { MediaQueriesCodes,  MediaQueriesExampleCodes } from './MediaQueries/code';
+import MediaQueryExample from './MediaQueries/example';
+
+
+import MediaQueriesAsComponent from './MediaQueriesAsComponent';
+import MediaQueriesAsComponentCode from './MediaQueriesAsComponent/code';
 
 
 export const slides = [
@@ -33,6 +42,17 @@ export const slides = [
   <FrameworksSlide key="slide_7" />,
 
   <StyledComponentsSlide key="slide_8" />,
-...StyledComponentsCodes  
-  
+  ...StyledComponentsCodes,
+
+  <Responsiveness key="slide_9" />,
+  <ResponsivenessCode key="slide_10" />,
+
+  <StyledMediaQuery key="slide_11" />,
+  <MediaQueriesCodes key="slide_12" />,
+     
+  <MediaQueriesExampleCodes key="slide_13" />,
+  <MediaQueryExample key="slide_14" />,
+
+  <MediaQueriesAsComponent key="slide_15" />,
+  <MediaQueriesAsComponentCode key="slide_16" />,
 ];

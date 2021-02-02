@@ -4,7 +4,7 @@ import PizzaFyll from './pizzafyll.jpg';
 import { PizzaIllustration, RectContainer, UglyH1, UglyP } from './stiil.style';
 
 const Stiil = (): JSX.Element => (
-  <Container className="box">
+  <Container  bgColor="transparent">
     <UglyH1>Stæl og Stil som Ståle Stiil </UglyH1>
     <RectContainer>
       <PizzaIllustration src={PizzaFyll} alt="! Ståle Stiil" />

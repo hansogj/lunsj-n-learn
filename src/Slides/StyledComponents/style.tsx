@@ -12,13 +12,15 @@ export const FlexContainer = styled.div`
   }
 `;
 
-export const Container = styled.div`
-  h1 {
-    text-align: center;
-  }
-  background-color: ${pallet.gray_1};
+export const Container = styled.div<{bgColor?: string}>`
+  margin-top: ${base_X(12)};
+  background-color: ${(props) => props.bgColor || pallet.gray_1};
   color: ${pallet.gray_3};
   padding: calc(${base}*2);
+
+  h1, .center {
+    text-align: center;
+  }
   a {
     margin:0  ${base} ;
     display:inline-block;

@@ -6,8 +6,8 @@ import { center, half, double, size } from '../StyledComponents/style.utils';
 export const IconContainer = styled.div`
   margin: ${double} 0;
   padding: ${double};
-  background: ${pallet.gray_3};
-  color: ${pallet.gray_1};
+  background: ${pallet.green_contrast};
+  color: ${pallet.gray_3};
   border-radius: ${half};
 `;
 

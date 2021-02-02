@@ -78,6 +78,19 @@ Syntactically Awesome StyleSheets / Sassy CSS
 * eslint
 * eslint-plugin-styled-components-a11y
 
+
+### Media Queries
+
+* definerte endepunkter - type : small, medium, large, gigantic,
+* funksjoner: 
+* * lessThan(breakpoint | size),
+* * greaterThan(breakpoint | size),
+* * between(firstBreakpoint | firstSize, lastBreakpoint | lastSize),
+
+### react-responsive
+- [x] lar deg jobbe i element-strukturen
+- [x] ofte like godt å switche mellom screen-sizes - lag/vis en komponent pr size istede for å tweake på css med media-queries
+
 ### Style Systems
 
 

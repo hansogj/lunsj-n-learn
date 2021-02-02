@@ -9,4 +9,7 @@ export const pallet = {
   gray_2: '#888',
   gray_3: '#ddd',
   white: '#fff',
+
+  green_light:"#00d8b4",
+  green_contrast:"#215c5c"
 };
