@@ -19,14 +19,16 @@ import Responsiveness from './Responsiveness';
 import ResponsivenessCode from './Responsiveness/code';
 
 import StyledMediaQuery from './MediaQueries';
-import { MediaQueriesCodes,  MediaQueriesExampleCodes } from './MediaQueries/code';
+import { MediaQueriesCodes, MediaQueriesExampleCodes } from './MediaQueries/code';
 import MediaQueryExample from './MediaQueries/example';
-
 
 import MediaQueriesAsComponent from './MediaQueriesAsComponent';
 import MediaQueriesAsComponentCode from './MediaQueriesAsComponent/code';
 
+import StyledSystem from './StyledSystem';
+import StyledSystemCode from './StyledSystem/code';
 
+import StoreBlocks from './StoreBlocks';
 export const slides = [
   <StiilSlide key="slide_0" />,
 
@@ -37,9 +39,9 @@ export const slides = [
   <SassCode key="slide_4" />,
 
   <BootstrapSlide key="slide_5" />,
+  <FrameworksSlide key="slide_7" />,
   <BootstrapCode key="slide_6" />,
 
-  <FrameworksSlide key="slide_7" />,
 
   <StyledComponentsSlide key="slide_8" />,
   ...StyledComponentsCodes,
@@ -49,10 +51,15 @@ export const slides = [
 
   <StyledMediaQuery key="slide_11" />,
   <MediaQueriesCodes key="slide_12" />,
-     
+
   <MediaQueriesExampleCodes key="slide_13" />,
   <MediaQueryExample key="slide_14" />,
 
   <MediaQueriesAsComponent key="slide_15" />,
   <MediaQueriesAsComponentCode key="slide_16" />,
+
+  <StyledSystem key="slide_16" />,
+  ...StyledSystemCode,
+
+  <StoreBlocks key="StoreBlocks" />,
 ];

@@ -93,4 +93,13 @@ Syntactically Awesome StyleSheets / Sassy CSS
 
 ### Style Systems
 
+- [x] Tilbyr primitive byggestener for komponentbasert designsystem 
+- [x] Style props angitt i en et globalt theme
+- [x] raskt oppsett av verdier som responsive, font-størrelse, margin, padding, width, and more
+- [x] konsistent opplevelse av Typographic scale for, spacing/layout, fargepalett
+- [x] Fungerer med  CSS-in-JS biblioteker som Styled Components and Emotion
+- [ ] Ikke fult ut responsive
+- [ ] Skummel refaktorering
+- [ ] Responsiv spacing som array av index-posisjoner !!!!
+- [ ] Inline stylin
 

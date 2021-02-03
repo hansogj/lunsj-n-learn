@@ -1,15 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { generateMedia } from 'styled-media-query';
-
-const absoluteVase = 8;
-const absoluteX = (factor: number) => factor * absoluteVase;
-
-export const screenSizes = {
-  desktop: absoluteX(160),
-  tablet: absoluteX(120),
-  mobile: absoluteX(90),
-  smallMobile: 0,
-};
+import { screenSizes } from '../constants';
 
 export const threshold = generateMedia(
   Object.keys(screenSizes).reduce((acc, cur) => {

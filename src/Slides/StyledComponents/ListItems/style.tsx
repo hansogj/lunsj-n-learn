@@ -19,6 +19,7 @@ export const ListItem = styled.li<ListProps>`
   padding-left: ${base_X(1)};
   color: ${(props) => props.theme.color};
   text-align: ${(props) => props.theme.textAlign};
+  
 `;
 
 ListIcon.defaultProps = {
@@ -44,4 +45,5 @@ export const inverseTheme = {
 export const ListStyle = styled.ul`
   list-style: none;
   padding-left: 0;
+  
 `;

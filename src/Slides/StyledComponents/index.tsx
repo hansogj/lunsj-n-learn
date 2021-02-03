@@ -12,11 +12,12 @@ const StyledComponents = (): JSX.Element => (
           'ES6 & CSS',
           'Utvidbart og modulertbart',
           'Klasse Kluss',
-          'Risikofri refaktorering',
+          'Reduserer Refaktorering Risiko',
           'Profiler / Themes',
+          'eslint-plugin-styled-components-a11y ',
         ]}
       />
-      <ListItems items={['CSS as template strings', 'Blanke ark', 'Mangler IDE-support', 'Responsivitet' ]} inverse />
+      <ListItems items={['CSS som template strings', 'Blanke ark', 'Mangler IDE-support', 'Responsivitet']} inverse />
     </FlexContainer>
   </Container>
 );
